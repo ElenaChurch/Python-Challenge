@@ -51,6 +51,7 @@ otooleypercent=(Otooley/totalvotes)*100
 #printing output
 print(Unique_list)
 output=f'''text
+List of Candidates {Unique_list}
   Election Results
   -------------------------
   Total Votes: {totalvotes}
@@ -64,3 +65,6 @@ output=f'''text
   -------------------------
   '''
 print(output)
+
+with open("output.txt", "a") as f:
+    print(output, file=f)

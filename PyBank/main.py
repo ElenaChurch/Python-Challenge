@@ -57,5 +57,7 @@ output = f'''
 
 print(output)
 
+with open("output.txt", "a") as f:
+    print(output, file=f)
 
 
